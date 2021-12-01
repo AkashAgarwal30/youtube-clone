@@ -10,5 +10,6 @@ export function configureStore() {
     applyMiddleware(sagaMiddleware)
   ));
   sagaMiddleware.run(rootSaga);
+  
   return store;
 }
